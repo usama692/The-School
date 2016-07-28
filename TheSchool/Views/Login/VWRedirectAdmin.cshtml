@@ -1,0 +1,31 @@
+﻿@model TheSchool.Models.LoginModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>The School| Admin Page</title>
+</head>
+<body>
+
+    @using (Html.BeginForm("Logout", "Login", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+    {
+
+        <form action="" method="post">
+            <div>
+                <h1>WELCOME Admin @HttpContext.Current.Session["UserName"]</h1>
+                <h2>You are a @HttpContext.Current.Session["Designation"]</h2>
+            </div>
+            <div>
+                <button type="submit" class="btn green pull-right">
+                    LogOut <i class="m-icon-swapright m-icon-white"></i>
+                </button>
+            </div>
+        </form>
+    }
+</body>
+</html>

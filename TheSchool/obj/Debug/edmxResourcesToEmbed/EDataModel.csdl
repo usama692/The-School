@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TheSchoolModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="designation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="isActive" Type="Int32" />
+    <Property Name="isAdmin" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="picpath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="TheSchoolEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Login" EntityType="Self.tbl_Login" />
+    <FunctionImport Name="Sp_Login" ReturnType="Collection(TheSchoolModel.Sp_Login_Result)">
+      <Parameter Name="user" Mode="In" Type="String" />
+      <Parameter Name="pass" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_Reg_Insert">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="User" Mode="In" Type="String" />
+      <Parameter Name="Pass" Mode="In" Type="String" />
+      <Parameter Name="Deignation" Mode="In" Type="String" />
+      <Parameter Name="pic" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_RecoverPassword" ReturnType="Collection(TheSchoolModel.Sp_RecoverPassword_Result)">
+      <Parameter Name="user" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_ChangePwd">
+      <Parameter Name="user" Mode="In" Type="String" />
+      <Parameter Name="pwd" Mode="In" Type="String" />
+      <Parameter Name="changepwd" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="Sp_Login_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="username" Nullable="true" />
+    <Property Type="String" Name="password" Nullable="true" />
+    <Property Type="String" Name="name" Nullable="true" />
+    <Property Type="String" Name="designation" Nullable="true" />
+    <Property Type="Int32" Name="isActive" Nullable="true" />
+    <Property Type="Int32" Name="isAdmin" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_RecoverPassword_Result">
+    <Property Type="String" Name="name" Nullable="true" />
+    <Property Type="String" Name="username" Nullable="true" />
+    <Property Type="String" Name="password" Nullable="true" />
+    <Property Type="String" Name="email" Nullable="true" />
+  </ComplexType>
+</Schema>

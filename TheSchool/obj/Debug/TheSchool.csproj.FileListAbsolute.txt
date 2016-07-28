@@ -1,0 +1,37 @@
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\ApplicationInsights.config
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\csc.exe
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\System.Collections.Immutable.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\System.Reflection.Metadata.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\vbc.exe
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\VBCSCompiler.exe
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\roslyn\VBCSCompiler.exe.config
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\TheSchool.dll.config
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\TheSchool.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\bin\TheSchool.pdb
+E:\MY Data\Usama The School\TheSchool\TheSchool\obj\Debug\TheSchool.dll
+E:\MY Data\Usama The School\TheSchool\TheSchool\obj\Debug\TheSchool.pdb
+E:\MY Data\Usama The School\TheSchool\TheSchool\obj\Debug\TheSchool.csprojResolveAssemblyReference.cache
+D:\VS Projects\TheSchool\TheSchool\bin\ApplicationInsights.config
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\csc.exe
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\System.Collections.Immutable.dll
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\System.Reflection.Metadata.dll
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\vbc.exe
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\VBCSCompiler.exe
+D:\VS Projects\TheSchool\TheSchool\bin\roslyn\VBCSCompiler.exe.config
+D:\VS Projects\TheSchool\TheSchool\bin\TheSchool.dll.config
+D:\VS Projects\TheSchool\TheSchool\bin\TheSchool.dll
+D:\VS Projects\TheSchool\TheSchool\bin\TheSchool.pdb
+D:\VS Projects\TheSchool\TheSchool\obj\Debug\TheSchool.dll
+D:\VS Projects\TheSchool\TheSchool\obj\Debug\TheSchool.pdb

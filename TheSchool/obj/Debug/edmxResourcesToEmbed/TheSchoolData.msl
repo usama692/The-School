@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TheSchoolModelStoreContainer" CdmEntityContainer="TheSchoolEntities2">
+    <EntitySetMapping Name="tbl_Login">
+      <EntityTypeMapping TypeName="TheSchoolModel.tbl_Login">
+        <MappingFragment StoreEntitySet="tbl_Login">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="designation" ColumnName="designation" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+          <ScalarProperty Name="picpath" ColumnName="picpath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Sp_ChangePwd" FunctionName="TheSchoolModel.Store.Sp_ChangePwd" />
+    <FunctionImportMapping FunctionImportName="Sp_Login" FunctionName="TheSchoolModel.Store.Sp_Login">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TheSchoolModel.Sp_Login_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="designation" ColumnName="designation" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+          <ScalarProperty Name="picpath" ColumnName="picpath" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_RecoverPassword" FunctionName="TheSchoolModel.Store.Sp_RecoverPassword">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TheSchoolModel.Sp_RecoverPassword_Result">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Reg_Insert" FunctionName="TheSchoolModel.Store.Sp_Reg_Insert" />
+  </EntityContainerMapping>
+</Mapping>

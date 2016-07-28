@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TheSchoolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar(max)" />
+    <Property Name="password" Type="nvarchar(max)" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="designation" Type="nvarchar(max)" />
+    <Property Name="email" Type="nvarchar(max)" />
+    <Property Name="isActive" Type="int" />
+    <Property Name="isAdmin" Type="int" />
+    <Property Name="picpath" Type="nvarchar(max)" />
+  </EntityType>
+  <Function Name="Sp_ChangePwd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="pwd" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="changepwd" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="Sp_Login" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="pass" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="Sp_RecoverPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="email" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="Sp_Reg_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="User" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Pass" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Deignation" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="pic" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <EntityContainer Name="TheSchoolModelStoreContainer">
+    <EntitySet Name="tbl_Login" EntityType="Self.tbl_Login" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

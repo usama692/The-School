@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "User Page";
+    Layout = "~/Views/Shared/layout.cshtml";
+}
+
+<div>
+    <h1>WELCOME @HttpContext.Current.Session["UserName"]</h1>
+    <h2>You are a @HttpContext.Current.Session["Designation"]</h2>
+</div>
